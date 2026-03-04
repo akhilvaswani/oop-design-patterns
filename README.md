@@ -1,24 +1,29 @@
-# Object-Oriented Design Patterns
+# OOP Design Patterns
 
-A collection of Java projects I built exploring core OOP concepts like inheritance hierarchies, polymorphism, abstract classes, and custom data structures.
+A handful of Java projects from when I was learning OOP concepts -- inheritance, polymorphism, abstract classes, that kind of thing.
 
-## Projects
+## What's in Here
 
-### Employee Management System
-A staff management hierarchy using abstract classes and multi-level inheritance. Includes `StaffMember` (abstract base), `Employee`, `Hourly`, and `Executive` subclasses. Shows method overriding, polymorphic pay calculations, and custom exception handling (`BonusTooLowException`).
+**Employee Management System** -- Class hierarchy with an abstract `StaffMember` base class, then `Employee`, `Hourly`, and `Executive` subclasses. Each one overrides the pay calculation differently. Also has a custom `BonusTooLowException` for input validation.
 
-### Geometry Classes
-Shape hierarchy with `Circle`, `Square`, `Triangle`, and `Cylinder` classes. Each shape calculates its own area and perimeter through method overriding. Shows how abstract base classes enforce consistent interfaces across different implementations.
+**Geometry Classes** -- `Circle`, `Square`, `Triangle`, `Cylinder` all extending a base shape class. Each one computes its own area and perimeter. Pretty standard stuff but good for getting comfortable with method overriding.
 
-### Dog Kennel
-Kennel management system that tracks dogs and their attributes. Built around OOP principles with encapsulation and object composition.
+**Dog Kennel** -- A kennel tracker that manages dogs and their info. Mostly an exercise in encapsulation and object composition.
 
-### Book Comparator
-Implements the `Comparable` interface to compare books by different attributes (title, author, page count). Shows interface implementation and natural ordering.
+**Book Comparator** -- Implements `Comparable` to sort books by title, author, or page count. Quick demo of interface implementation.
 
-### Sorted Integer List
-Custom sorted data structure that extends a base `IntList` class. Overrides `add()` to maintain sorted order on insertion using element shifting - basically insertion sort built into the data structure itself.
+**Sorted Integer List** -- Custom data structure extending `IntList` that keeps elements sorted on insert. Basically insertion sort baked into the add method.
+
+## Running
+
+```bash
+javac *.java
+java MainClass
+```
+
+Replace `MainClass` with whatever driver class you want to run.
 
 ## Built With
-- Java (compiled with javac)
+
+- Java
 - IntelliJ IDEA
